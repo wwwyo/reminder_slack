@@ -30,7 +30,7 @@ end_mes = '''
 now_hour = datetime.now().hour
 if now_hour < 13:
    message = start_mes
-elif now_hour > 19:
+elif now_hour >= 19:
    message = end_mes
 else:
    message = an_hour_mes
